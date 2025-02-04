@@ -17,7 +17,7 @@ class M003LaravelModelResource extends Resource
 {
     protected static ?string $model = M003LaravelModel::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-puzzle-piece';
 
     protected static ?string $modelLabel = 'Laravel Model';
 

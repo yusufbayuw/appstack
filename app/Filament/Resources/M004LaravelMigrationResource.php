@@ -17,7 +17,7 @@ class M004LaravelMigrationResource extends Resource
 {
     protected static ?string $model = M004LaravelMigration::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-circle-stack';
 
     protected static ?string $modelLabel = 'Laravel Migration';
 

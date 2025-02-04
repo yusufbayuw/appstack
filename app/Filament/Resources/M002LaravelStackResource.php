@@ -17,7 +17,7 @@ class M002LaravelStackResource extends Resource
 {
     protected static ?string $model = M002LaravelStack::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-cursor-arrow-ripple';
 
     protected static ?string $modelLabel = 'Laravel Stack';
 

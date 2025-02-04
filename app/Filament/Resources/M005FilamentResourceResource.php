@@ -17,13 +17,13 @@ class M005FilamentResourceResource extends Resource
 {
     protected static ?string $model = M005FilamentResource::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-paint-brush';
 
     protected static ?string $modelLabel = 'Filament Resource';
 
-    protected static ?string $navigationLabel = 'Laravel Migration';
+    protected static ?string $navigationLabel = 'Filament Resource';
 
-    protected static ?string $slug = 'laravel-migration';
+    protected static ?string $slug = 'filament-resource';
 
     public static function form(Form $form): Form
     {
@@ -31,14 +31,14 @@ class M005FilamentResourceResource extends Resource
             ->schema([
                 Forms\Components\Select::make('laravel_migration_id')
                     ->relationship('laravel_migration', 'id'),
-                Forms\Components\Textarea::make('fields')
+                Forms\Components\Repeater::make('fields')
                     ->schema([
                         Forms\Components\TextInput::make('name'),
                         Forms\Components\TextInput::make('type'),
                         Forms\Components\Textarea::make('config'),
                     ])
                     ->columnSpanFull(),
-                Forms\Components\Textarea::make('columns')
+                Forms\Components\Repeater::make('columns')
                     ->schema([
                         Forms\Components\TextInput::make('name'),
                         Forms\Components\TextInput::make('type'),

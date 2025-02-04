@@ -19,7 +19,7 @@ class M001VmStackResource extends Resource
 {
     protected static ?string $model = M001VmStack::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-cpu-chip';
 
     protected static ?string $modelLabel = 'VM Stack';
 
